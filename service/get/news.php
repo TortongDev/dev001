@@ -1,7 +1,7 @@
 <?php
     require_once "../connection/index.php";
     try {
-        $stmt = $conn->query("SELECT * FROM news");
+        $stmt = $conn->query("SELECT * FROM news limit 10");
         $stmt->execute();
         $result = $stmt->fetchAll(PDO::FETCH_OBJ);
     

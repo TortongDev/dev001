@@ -83,7 +83,6 @@
                     </div>
                 </div>
                 
-                <button onclick="scrollby1()">scroll by</button>
             </div>
         </section>
         <div class="modal-img">lll
@@ -104,7 +103,7 @@
             <div class="wrapper-content">
                 <div class="container grid-tem-5 datat" id="app" >
                     <div class="content" v-for="row in datarespon">
-                        <img src="./images/unnamed.png" alt="news">
+                        <img :src="row.img" alt="news">
                         <div class="info" >
                             <h3>{{row.new_topic}}</h3>
                             <h4>{{row.new_topic}}</h4>
@@ -177,7 +176,7 @@
                 var array = res.data.res;
                 // if (array) {
                     this.datarespon = array;
-                    console.log(this.news[0]);
+                    console.log(this.datarespon.img);
                 // } else {
                     
                 // }
