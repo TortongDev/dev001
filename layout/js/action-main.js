@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded',(e)=>{
         kit.style.color         = '';
     }
 
-    const chanal  = document.querySelector('[href="#chanal"]');
-    if(document.documentElement.scrollTop > 1397 ){
+    const chanal  = document.querySelector('[href="#news"]');
+    if(document.documentElement.scrollTop > 1700 ){
         chanal.style.color = "yellow"
     }else{
         chanal.style.color      = ""
