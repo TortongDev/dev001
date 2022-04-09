@@ -437,6 +437,9 @@ button[type=submit]:hover {
       margin-top: 0;
       width: 100%;
     }
+    nav {
+        position: fixed !important;
+    }
     ul {
         display: none;
     }
@@ -490,6 +493,8 @@ button[type=submit]:hover {
     .wd-scroll {
         width: 1000px ;
     }
-
+.content > img {
+    width: 100%;
+}
 
 }
